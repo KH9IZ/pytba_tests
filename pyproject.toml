@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytba_tests"
+version = "0.0.1"
+authors = [
+    { name="Egor Knyazev", email="egorknyazev@mail.ru" },
+]
+description = "Test framework for PyTelegramBotApi."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Framework :: PyTelegramBotApi",
+]
+dependencies = [
+    "PyTelegramBotApi",
+]
+
+[project.urls]
+# Repository = "https://github.com/KH9IZ/counter_bot"
+
+[tools.setuptool.packages.find]
+exclude = ["examples"]
+namespaces = false
